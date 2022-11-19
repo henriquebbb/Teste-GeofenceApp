@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">GeofenceApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Olá fragmento em branco</string>
+
+    <string name="permission_description">Para usar este aplicativo, primeiro precisamos solicitar permissão de localização de você. Caso contrário, não poderemos fornecer-lhe o nosso serviço. Se você concorda e deseja continuar, toque no botão abaixo.</string>
+    <string name="permission_required">Permissão necessária</string>
+    <string name="continue_btn">Continuar</string>
+    <string name="back">Voltar</string>
+    <string name="next">Próximo</string>
+    <string name="name">Nome</string>
+    <string name="geofence">Criando Geofence</string>
+    <string name="one_three">1/3</string>
+    <string name="two_three">2/3</string>
+    <string name="location">Localização</string>
+    <string name="powered_by_google">Powered by Google</string>
+    <string name="done">Fim</string>
+    <string name="three_three">3/3</string>
+    <string name="_50_0_m">50.0 m</string>
+    <string name="choose_a_radius_for_your_geofence">Escolha um raio para sua cerca geográfica.</string>
+
+    <string name="display_meters">%1$s m</string>
+    <string name="display_kilometers">%1$s km</string>
+    <string name="long_press_on_the_map_n_to_add_a_geofence">Pressione e segure no mapa \n para adicionar uma cerca geográfica.</string>
+    <string name="no_geofence_found">Nenhuma Geofence encontrada.</string>
+    <string name="radius">Raio:</string>
+    <string name="coordinates">Coordenadas:</string>
+    <string name="location_txt">Localização:</string>
+</resources>

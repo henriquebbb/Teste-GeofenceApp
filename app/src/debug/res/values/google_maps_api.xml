@@ -1,0 +1,23 @@
+<resources>
+    <!--
+   TODO: Antes de executar seu aplicativo, você precisa de uma chave de API do Google Maps.
+
+     Para obter um, siga este link, siga as instruções e pressione "Criar" no final:
+
+     https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=73:9A:60:A6:C3:94:02:D9:A5:C6:9F:AC:B0:70: 3B:3B:DB:50:CD:7E%3Bcom.example.geofenceapp
+
+     Você também pode adicionar suas credenciais a uma chave existente, usando estes valores:
+
+     Nome do pacote:
+     com.example.gefenceapp
+
+     Impressão digital do certificado SHA-1:
+     73:9A:60:A6:C3:94:02:D9:A5:C6:9F:AC:B0:70:3B:3B:DB:50:CD:7E
+
+     Alternativamente, siga as instruções aqui:
+     https://developers.google.com/maps/documentation/android/start#get-key
+
+     Depois de ter sua chave (começa com "AIza"), substitua o "google_maps_key" Keu neste arquivo.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCiDUq0LLxbu-j-EryGRlV0ahMY5y-hX4I</string>
+</resources>

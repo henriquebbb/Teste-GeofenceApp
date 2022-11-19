@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--
+    O widget de preenchimento automático é uma caixa de diálogo de pesquisa com a funcionalidade de preenchimento
+    automático integrada. À medida que um usuário digita termos de pesquisa, o widget apresenta uma
+    lista de locais previstos para escolha. Quando o usuário faz uma seleção, uma instância Place é
+    retornada, e o app vai poder usá-la para ver detalhes sobre o lugar selecionado.
+-->
+    <data>
+        <import type="com.google.android.libraries.places.api.model.AutocompletePrediction"/>
+        <variable
+            name="prediction"
+            type="AutocompletePrediction" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/city_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:name = "com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            setCidade="@{prediction}"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/country_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:name = "com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            setPais="@{prediction}"
+            app:layout_constraintEnd_toEndOf="@+id/city_textView"
+            app:layout_constraintStart_toStartOf="@+id/city_textView"
+            app:layout_constraintTop_toBottomOf="@+id/city_textView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
